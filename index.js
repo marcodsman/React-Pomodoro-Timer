@@ -154,7 +154,6 @@ class App extends React.Component {
   }
   
   reset(){
-    running = false; // debug
     this.stop();
     
     this.setState({
