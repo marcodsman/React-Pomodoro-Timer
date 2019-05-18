@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url(//db.onlinewebfonts.com/c/a4e40941cd04772dbe49aa5790ad5905?family=OPTICalculator);
+
+@font-face {font-family: "OPTICalculator";
+    src: url("//db.onlinewebfonts.com/t/a4e40941cd04772dbe49aa5790ad5905.eot");
+    src: url("//db.onlinewebfonts.com/t/a4e40941cd04772dbe49aa5790ad5905.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/a4e40941cd04772dbe49aa5790ad5905.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/a4e40941cd04772dbe49aa5790ad5905.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/a4e40941cd04772dbe49aa5790ad5905.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/a4e40941cd04772dbe49aa5790ad5905.svg#OPTICalculator") format("svg");
+}
+
+body {
+  color: #0e5eff;
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+}
+
+#app {
+  margin: 0 auto;
+  width: 500px;
+}
+
+#break-control {
+  width: 46%;
+  float: left;
+  border: 5px solid grey;
+  border-radius: 15%;
+  margin: 4px;
+}
+
+#session-control {
+  width: 46%;
+  float: right;
+  border: 5px solid grey;
+  border-radius: 15%;
+  margin: 4px;
+}
+
+#timer {
+  clear: both;
+  margin: 10px;
+}
+
+#timer-label {
+  padding: 30px 0 5px;
+  margin: 0;
+  font-size: 50px
+}
+
+#time-left {
+  margin: 15px;
+  font-size: 100px;
+  font-weight: 400;
+  font-family: 'OPTICalculator', 'Orbitron', sans-serif;
+}
+
+#timer-control {
+  margin: 10px;
+}
+
+#break-length, #session-length {
+  margin: 0px;
+}
+
+button {
+  background: none;
+  color: inherit;
+  font-size: 35px;
+  margin: 0;
+  border: none;
+  cursor: pointer;
+}
+
+#start_stop {
+  color: green;
+  margin-right: 15px;
+}
+
+#reset {
+  color: red;
+  margin-left: 15px;
+}
+
+
+/* Media queries */
+@media(max-width: 600px) {
+  
+  body{
+    text-align: center;
+  }
+  
+  #app{
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+  
+  #break-control {
+    float: none;
+    margin: 15px auto;
+    flex-direction: column;
+  }
+  #session-control {
+    float: none;
+    margin: 15px auto;
+    inline-block;
+    flex-direction: column;
+  }
+
+  #timer {
+    clear: both;
+    margin: 10px auto;
+  }
+
+}
